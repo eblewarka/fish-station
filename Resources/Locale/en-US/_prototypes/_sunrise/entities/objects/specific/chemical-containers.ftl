@@ -1,6 +1,6 @@
 ent-AphrodisiacChemistryBottle = aphrodisiac bottle
     .desc = { ent-BaseChemistryBottleFilled.desc }
-ent-PolytrinicAcidChemistryBottle = { ent-BaseChemistryBottleFilled }
+ent-ChemistryBottlePolytrinicAcid = { ent-BaseChemistryBottleFilled }
     .suffix = polytrinic acid
     .desc = { ent-BaseChemistryBottleFilled.desc }
 ent-JugPunctTranexSunrise = { ent-Jug }
@@ -39,3 +39,9 @@ ent-JugDyloveneSunrise = { ent-Jug }
 ent-JugSalineSunrise = { ent-Jug }
     .suffix = saline
     .desc = { ent-Jug.desc }
+ent-ChemistryBottleBicaridine = bicaridine bottle
+    .desc = A bottle filled with bicaridine, used to treat brute damage.
+ent-ChemistryBottleDermaline = dermaline bottle
+    .desc = A bottle filled with dermaline, used to treat burn damage.
+ent-ChemistryBottleStimulants = stimulants bottle
+    .desc = A bottle filled with stimulants, used to increase movement speed and treat stun damage.

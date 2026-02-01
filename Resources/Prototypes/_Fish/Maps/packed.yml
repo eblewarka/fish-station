@@ -5,21 +5,21 @@
   maxRandomOffset: 0
   randomRotation: false
   minPlayers: 0
-  maxPlayers: 60
+  maxPlayers: 35
   stations:
     Packed:
       stationProto: StandardNanotrasenStation
       components:
         - type: StationNameSetup
-          mapNameTemplate: '{0} Packed {1}'
+          mapNameTemplate: '{0} Пакед {1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
-            prefixCreator: 'RS'
+            prefixCreator: 'FH'
         - type: SpawnGridAndDockToStation
           grids:
           - gridPath: /Maps/_Fish/Shuttles/mining.yml
             priorityTag: DockMining
-          - gridPath: /Maps/_Fish/Shuttles/security.yml
+          - gridPath: /Maps/_Fish/Shuttles/security_jay.yml
             priorityTag: DockSecurity
         - type: StationEmergencyShuttle
           emergencyShuttlePath: /Maps/_Fish/Shuttles/emergency.yml
@@ -30,6 +30,7 @@
             Adjutant: [ 1, 1 ]
             NanoTrasenRepresentative: [ 1, 1 ]
             HeadOfPersonnel: [ 1, 1 ]
+            ComMaid: [ 1, 1 ] # Горничная командования
             #service
             Bartender: [ 2, 2 ]
             Botanist: [ 2, 2 ]
@@ -39,7 +40,6 @@
             Librarian: [ 1, 1 ]
             ServiceWorker: [ 3, 3 ]
             Reporter: [ 2, 2 ]
-            Zookeeper: [ 1, 1 ]
             Barber: [ 1, 1 ]
             #engineering
             ChiefEngineer: [ 1, 1 ]
@@ -74,6 +74,7 @@
             #supply
             Quartermaster: [ 1, 1 ]
             SalvageSpecialist: [ 3, 3 ]
+            MiningSpecialist: [ 1, 1 ]
             CargoTechnician: [ 3, 3 ]
             MailCarrier: [ 1, 2 ]
             #civilian
@@ -101,37 +102,3 @@
             PeaceBorg: [ 2, 2 ]
             MedicalBorg: [ 4, 4 ]
             SecurityBorg: [ 4, 4 ]
-        - type: StationGoal
-          goals:
-          - Shuttle
-          - Singularity
-          - SolarPanels
-          - Artifacts
-          - Bank
-          - Zoo
-          - MiningOutpost
-          - Tesla
-          #- XenobiologyRepair
-          - VirusologyAmbusol
-          - Containment
-          - WeaponsSecurity
-          - MaintsRepair
-          - DormsBuild
-          - BattleShuttle
-          - Transit
-          - NukeRoom
-          - Permabrig
-          - Farm
-          - Delegates
-          - Cyborgs
-          - Testing
-          - Anomaly
-          #- Replenishment
-          - IntelWeapons
-          - Reports
-          - Reconnaissance
-          - Saboteurs
-          - Furs
-          - Crew
-          - CleaningUp
-          - VirusFlesh

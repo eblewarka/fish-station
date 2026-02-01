@@ -5,6 +5,7 @@
   maxRandomOffset: 0
   randomRotation: false
   minPlayers: 0
+  maxPlayers: 55
   stations:
     FishOasis:
       stationProto: StandardNanotrasenStation
@@ -13,12 +14,12 @@
           mapNameTemplate: '{0} Оазис {1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
-            prefixCreator: '-RS'
+            prefixCreator: 'FH'
         - type: SpawnGridAndDockToStation
           grids:
           - gridPath: /Maps/_Fish/Shuttles/mining.yml
             priorityTag: DockMining
-          - gridPath: /Maps/_Fish/Shuttles/security.yml
+          - gridPath: /Maps/_Fish/Shuttles/security_jay.yml
             priorityTag: DockFishSecurity
         - type: StationEmergencyShuttle
           emergencyShuttlePath: /Maps/_Fish/Shuttles/emergency_delta.yml
@@ -29,6 +30,7 @@
             Adjutant: [ 1, 1 ]
             NanoTrasenRepresentative: [ 1, 1 ]
             HeadOfPersonnel: [ 1, 1 ]
+            ComMaid: [ 1, 1 ] # Горничная командования
             #service
             Bartender: [ 2, 2 ]
             Botanist: [ 3, 3 ]
@@ -38,7 +40,6 @@
             Librarian: [ 1, 1 ]
             ServiceWorker: [ 3, 3 ]
             Reporter: [ 2, 2 ]
-            Zookeeper: [ 1, 1 ]
             Barber: [ 1, 1 ]
             #engineering
             ChiefEngineer: [ 1, 1 ]
@@ -66,13 +67,14 @@
             Warden: [ 1, 1 ]
             SeniorOfficer: [ 1, 1 ]
             Detective: [ 2, 2 ]
-            Brigmedic: [ 2, 2 ]
+            Brigmedic: [ 1, 1 ]
             SecurityPilot: [ 2, 2 ]
             SecurityOfficer: [ 6, 6 ]
             SecurityCadet: [ 5, 5 ]
             #supply
             Quartermaster: [ 1, 1 ]
             SalvageSpecialist: [ 3, 3 ]
+            MiningSpecialist: [ 1, 1 ]
             CargoTechnician: [ 5, 5 ]
             MailCarrier: [ 2, 2 ]
             #civilian
@@ -99,37 +101,3 @@
             PeaceBorg: [ 3, 3 ]
             MedicalBorg: [ 4, 4 ]
             SecurityBorg: [ 4, 4 ]
-        - type: StationGoal
-          goals:
-          - Shuttle
-          - Singularity
-          - SolarPanels
-          - Artifacts
-          - Bank
-          #- Zoo
-          - MiningOutpost
-          - Tesla
-          #- XenobiologyRepair
-          - VirusologyAmbusol
-          - Containment
-          - WeaponsSecurity
-          - MaintsRepair
-          - DormsBuild
-          - BattleShuttle
-          - Transit
-          - NukeRoom
-          - Permabrig
-          - Farm
-          - Delegates
-          - Cyborgs
-          - Testing
-          - Anomaly
-          #- Replenishment
-          - IntelWeapons
-          - Reports
-          - Reconnaissance
-          - Saboteurs
-          - Furs
-          - Crew
-          - CleaningUp
-          - VirusFlesh
